@@ -12,5 +12,5 @@ ZstNode::~ZstNode(){
 }
 
 float ZstNode::pineapple(){
-	return 10.0;
+	return 12.0;
 }

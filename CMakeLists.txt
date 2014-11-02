@@ -8,4 +8,4 @@ find_package(ZeroMQ)
 find_package(SWIG REQUIRED)
 include(UseSWIG)
 
-add_subdirectory (src)
+add_subdirectory (showtime)
