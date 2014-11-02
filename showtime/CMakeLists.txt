@@ -12,8 +12,6 @@ set(Showtime_HEADERS
 source_group("Source Files" FILES ${Showtime_SOURCES})
 source_group("Header Files" FILES ${Showtime_HEADERS})
 
-FIND_LIBRARY(ZMQ_LIB libzmq)
-
 add_library(showtime ${Showtime_SOURCES} ${Showtime_HEADERS})
 target_link_libraries(showtime ${ZeroMQ_LIBRARIES})
 
