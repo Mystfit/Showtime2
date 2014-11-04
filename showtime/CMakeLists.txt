@@ -12,7 +12,7 @@ set(Showtime_HEADERS
 source_group("Source Files" FILES ${Showtime_SOURCES})
 source_group("Header Files" FILES ${Showtime_HEADERS})
 
-add_library(showtime ${Showtime_SOURCES} ${Showtime_HEADERS})
+add_library(showtime SHARED ${Showtime_SOURCES} ${Showtime_HEADERS})
 target_link_libraries(showtime ${ZeroMQ_LIBRARIES})
 
 add_subdirectory(bindings)
