@@ -97,6 +97,7 @@ find_path(ZeroMQ_INCLUDE_DIR
 
 find_path(ZeroMQ_CPP_BINDING_DIR
   NAMES zmq.hpp
+  HINTS ${CMAKE_SOURCE_DIR}/devlibs/cppzmq
   )
 
 include(FindPackageHandleStandardArgs)

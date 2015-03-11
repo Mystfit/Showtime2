@@ -1,11 +1,11 @@
-option(USE_PYTHON "Build python bindings" OFF)
-option(USE_RUBY "Build ruby bindings" OFF)
+option(BINDINGS_RUBY "Build python bindings" OFF)
+option(BINDINGS_PYTHON "Build ruby bindings" OFF)
 
 
-if(USE_RUBY)
+if(BINDINGS_RUBY)
 	add_subdirectory(ruby)
-endif(USE_RUBY)
+endif(BINDINGS_RUBY)
 
-if(USE_PYTHON)
+if(BINDINGS_PYTHON)
 	add_subdirectory(python)
-endif(USE_PYTHON)
+endif(BINDINGS_PYTHON)
